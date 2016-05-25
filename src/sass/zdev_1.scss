@@ -1,0 +1,66 @@
+.promo-page{ background-image: url(../images/bg-promo.jpg); background-position: center top; background-size: cover; min-height: 993px;padding: 312px 223px 0;
+    .content{max-width: 635px; margin: 0 auto; position: relative;}
+    .banner{ position: relative; z-index:10;
+        .redbox{ min-height:333px; background-color: #e54e4e; text-align: center; position: relative;z-index: 10;padding-left: 8px;}
+        .txt{ display: inline-block; text-align: left;padding-top: 53px; padding-left: 28px;
+
+            p{ color: #fff; margin: 0; font:400 55px/55px 'KomikaAxis';
+                &:first-child{ font:400 32px/32px 'Roboto'; }
+            }
+        }
+        .buttons-wrap{ text-align: center;}
+        .button{ display: inline-block;width: 37%;
+            a{color: #fff;  font:500 16px/16px 'Roboto'; text-align: center; border: 2px solid #fff; text-decoration: none; border-radius:3px; max-width: 219px; height: 55px; display: block; width: 100%; text-transform: uppercase; transition: all 300ms;     padding-top: 20px;
+                &:hover{color:#e54e4e; background-color: #fff;}
+            }
+        }
+        .bound{ position: absolute; width:calc(100% + 43px); height:calc(100% + 48px); border: 2px solid #ee5050; top: -23px; left: -22px;transform: rotate(3deg);}
+        .one{ background-color: rgba(0,0,0,0.3);z-index: 8;}
+        .two{border-color: rgba(255,255,255,0.7);z-index: 7;    transform: rotate(-4deg);}
+        .three{ z-index:6; transform: rotate(-0.5deg);}
+
+    }
+    .imges{ position: absolute; z-index:5; top: 0; left: 0; width: 100%; height: 100%;
+        .img{ position: absolute; }
+        .ground{left:50%; transform:translateX(-47%); top: 202px;}
+        .roket{     left: -260px; top: -161px;}
+        .sasha{ right: -167px; bottom: -15px;}
+        img{max-width: none;}
+    }
+}
+.footer{ background-color: #e54e4e;min-height: 443px; z-index: 10;
+    .col{ display: inline-block; width: 33%; vertical-align: top;
+        .img{border-radius: 50%; border-color: #fff; display: inline-block; width: 64px;height: 64px;position: relative; box-shadow: 0 0 0 3px white; position: relative; vertical-align: top;
+            &:before{pointer-events: none;position: absolute;width: 100%;height: 100%;border-radius: 50%;content: '';box-sizing: content-box;top: 0;left: 0;padding: 0;box-shadow: 0 0 0 2px #fff;transition: transform 0.2s, opacity 0.2s}
+            &:hover{box-shadow: 0 0 0 5px white;
+                &:before{transform: scale(0.85);  opacity: 0.5;}
+            }
+            svg{ position: absolute; left: 50%; top: 50%; transform:translate(-50%, -50%);}
+            &.gg{svg{ width: 36px;}}
+            &.fb{svg{ width: 19px;}}
+            &.vk{svg{ width: 39px;}}
+            &.tl{svg{ width: 38px;}}
+            &.ml{svg{ width: 40px;}}
+            &.sk{svg{ width: 41px;}}
+        }
+        ul{list-style-type: none;}
+        a{ color: #fff; text-decoration: none; text-transform: uppercase; display: inline-block; font: 400 16px/16px 'Roboto';}
+        .txt{overflow: hidden; display: inline-block; vertical-align: top; padding: 0 4px; font-size:16px; margin-top: 27px;
+            p{transition: transform 0.3s; position: relative; margin: 0;min-width: 160px;
+                &:before{position: absolute;top: 100%;content: attr(data-h);font-weight: 900;transform: translate3d(0, 0, 0);}
+                &:hover{transform: translateY(-100%);
+
+                }
+            }
+        }
+    }
+    nav{
+        li{}
+        a { overflow: hidden; display: inline-block; vertical-align: top; padding: 0 4px; font-size: 16px; margin-top: 27px;
+            p { transition: transform 0.3s; position: relative; margin: 0; min-width: 160px;
+                &:before { position: absolute; top: 100%; content: attr(data-h); font-weight: 900; transform: translate3d(0, 0, 0); }
+                &:hover { transform: translateY(-100%);}
+            }
+        }
+    }
+}
