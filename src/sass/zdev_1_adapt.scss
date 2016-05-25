@@ -11,10 +11,37 @@
 
 }
 @media screen and (max-width: 1024px){
-
+    header{
+        .sendwich-icon {  display: block;   }
+    }
+    .footer{
+        nav.col{display: none;}
+        .col{width: 100%;
+            ul{display: flex;justify-content::space-around; }
+            .txt{display: none;}
+        }
+        .footer-wrapp{justify-content: space-around; flex-wrap:wrap;}
+    }
 }
-@media screen and (max-width: 992px){
-
+@media screen and (max-width: 900px){
+    .promo-page{    padding: 290px 0 0; min-height: 1129px;
+        .imges{display: none;}
+        .content{    max-width: 574px;}
+        .banner{
+            .txt{    margin-bottom: 28px;}
+            .redbox {    min-height: 396px;padding-left: 0;}
+            .button{width: 353px;display: block;margin: 0 auto;
+                a{max-width: none;}
+                &.main{ a{font-size: 26px;    height: 90px;    padding-top: 38px;}  }
+                &.works{ a{font-size: 20px;   border:none; text-decoration: underline; text-transform: none; padding-top: 27px;
+                    &:hover{background-color: transparent; color:#fff;}
+                }  }
+            }
+        }
+    }
+    .main{position: relative;
+          .imges2{background-image: url(../images/sanBG.png); background-position: center bottom; width: 100%;height: 379px; bottom: 0;position: absolute;}
+    }
 }
 @media screen and (max-width: 767px){
 
