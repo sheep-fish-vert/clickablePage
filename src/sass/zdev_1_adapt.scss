@@ -1,15 +1,3 @@
-@media screen and (max-width: 1920px){
-
-}
-@media screen and (max-width: 1600px){
-
-}
-@media screen and (max-width: 1366px){
-
-}
-@media screen and (max-width: 1280px){
-
-}
 @media screen and (max-width: 1024px){
     header{
         .sendwich-icon {  display: block;   }
@@ -17,10 +5,11 @@
     .footer{
         nav.col{display: none;}
         .col{width: 100%;
-            ul{display: flex;justify-content::space-around; }
+            ul{display: flex;justify-content:space-around; }
             .txt{display: none;}
         }
         .footer-wrapp{justify-content: space-around; flex-wrap:wrap;}
+        .foot-copyright{ display: none;}
     }
 }
 @media screen and (max-width: 900px){
@@ -39,19 +28,12 @@
             }
         }
     }
+    header {
+        .logo-wrap { padding: 110px 0 0 29px; text-align: center;
+            canvas{ width: 322px;}
+        }
+    }
     .main{position: relative;
           .imges2{background-image: url(../images/sanBG.png); background-position: center bottom; width: 100%;height: 379px; bottom: 0;position: absolute;}
     }
-}
-@media screen and (max-width: 767px){
-
-}
-@media screen and (max-width: 666px){
-
-}
-@media screen and (max-width: 479px){
-
-}
-@media screen and (max-width: 320px){
-
 }
