@@ -50,8 +50,8 @@
         li{margin-bottom: 20px;}
         a{ color: #fff; text-decoration: none; text-transform: uppercase; display: inline-block; font: 400 16px/16px 'Roboto';}
         .txt{overflow: hidden; display: inline-block; vertical-align: top; padding: 0 4px; font-size:16px; margin-top: 27px;margin-left: 25px;
-            p{transition: transform 0.3s; position: relative; margin: 0;min-width: 160px;
-                &:before{position: absolute;top: 100%;content: attr(data-h);font-weight: 900;transform: translate3d(0, 0, 0);}
+            a{transition: transform 0.3s; position: relative; margin: 0;
+                &:before{position: absolute;top: 100%;font-weight: 900;transform: translate3d(0, 0, 0);width: 100%; content: attr(data-h); }
                 &:hover{transform: translateY(-100%);
 
                 }
@@ -61,7 +61,7 @@
     nav.col{padding-top: 0;
         li{margin-bottom: 0;}
         a { overflow: hidden; display: inline-block; vertical-align: top; padding: 0 4px; font-size: 16px; margin-top: 27px;
-            p { transition: transform 0.3s; position: relative; margin: 0; min-width: 160px;
+            p { transition: transform 0.3s; position: relative; margin: 0;
                 &:before { position: absolute; top: 100%; content: attr(data-h); font-weight: 900; transform: translate3d(0, 0, 0); }
                 &:hover { transform: translateY(-100%);}
             }
