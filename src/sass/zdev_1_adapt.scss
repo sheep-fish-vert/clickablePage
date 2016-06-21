@@ -1,6 +1,13 @@
 @media screen and (max-width: 1024px){
     header{
         .sendwich-icon {  display: block;   }
+        .menu{background-color: rgba(0, 0, 0, 0.81);   padding: 50px 0; display: none;  position: absolute;    top: 0;    right: 0;    left: 0;    z-index: 11;
+            ul{list-style-type: none;}
+            li{margin-bottom: 20px;}
+            a{font:700 50px/50px 'Roboto'; color:#fff; text-transform: uppercase; display: inline-block;text-decoration: none;
+                &:hover{color:#e54e4e;}
+            }
+        }
     }
     .footer{
         nav.col{display: none;}

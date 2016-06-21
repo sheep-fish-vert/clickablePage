@@ -8,7 +8,7 @@ function butter(){
        }
     });
 }
-function changeViewport(){
+/*function changeViewport(){
     $(window).resize(function(){
         whatViewport();
     });
@@ -21,7 +21,7 @@ function changeViewport(){
         }
     };
 
-}
+}*/
 
 var canvas1, stage1, exportRoot1;
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 $(window).load(function(){
     init1();
-    changeViewport();
+    /*changeViewport();*/
     $('body').attr('style','opacity:1');
 });
 
