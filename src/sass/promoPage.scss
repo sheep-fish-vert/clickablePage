@@ -71,63 +71,23 @@
 }
 
 header{position: absolute; top: 0; left: 0;width: 100%;z-index: 20;
-        .logo-wrap{padding: 39px 0 0 39px;}
-        .sendwich-icon {    display:none;   width: 52px;    height: 30px;   position: absolute;   z-index: 12;top: 61px;right: 44px; cursor: pointer;
-            span {    display: block;    width: 100%;    height: 6px;    background-color: #597273;    position: relative;    transition: all 300ms ease;
-                &:before,
-                &:after{ content: '';    display: block;    position: absolute;    width: 100%;    height: 6px;    background-color: #597273;  left: 0; transition:all 300ms ease;}
-                &:before{top: 18px;}
-                &:after{bottom: 18px;}
+    .logo-wrap{padding: 39px 0 0 39px;}
+    .sendwich-icon {    display:none;   width: 52px;    height: 30px;   position: absolute;   z-index: 12;top: 61px;right: 44px; cursor: pointer;
+        span {    display: block;    width: 100%;    height: 6px;    background-color: #597273;    position: relative;    transition: all 300ms ease;
+            &:before,
+            &:after{ content: '';    display: block;    position: absolute;    width: 100%;    height: 6px;    background-color: #597273;  left: 0; transition:all 300ms ease;}
+            &:before{top: 18px;}
+            &:after{bottom: 18px;}
 
-            }
-            &.active{
-                span{background-color: transparent;
-                    &:before{ top: 0px; transform: rotate(405deg); background-color: #fff;}
-                    &:after{ bottom: 0px; transform: rotate(315deg); background-color: #fff;}
-                }
+        }
+        &.active{
+            span{background-color: transparent;
+                &:before{ top: 0px; transform: rotate(405deg); background-color: #fff;}
+                &:after{ bottom: 0px; transform: rotate(315deg); background-color: #fff;}
             }
         }
+    }
     .menu{ position: absolute; top: 0; left: 0; display: none;}
 
 }
 body{opacity:0; transition:opacity 500ms;min-width:640px;}
-
-.iivo-page{overflow: hidden;
-    .footer{ background-color: transparent;
-        .col{
-            .img{border-color: #333;box-shadow: 0 0 0 3px #333;
-                &:before{box-shadow: 0 0 0 2px #333;}
-            }
-            a{ color: #333;}
-        }
-        .foot-copyright{color: #333;}
-    }
-    header{ display: none;}
-    .iivo-wrapper{ position: relative;
-        &:before{content: ''; display: block; position: absolute; background-image: url(../images/red-triangle.png); width: 1654px; height: 1909px; left: 0; top: 0;}
-        &:after{content: ''; display: block; position: absolute; background-image: url(../images/green-triangle.png); width: 1654px; height: 1909px; right: 0; bottom: 0;}
-        .mbox{max-width: 1920px;padding: 0 20px;}
-        .form-wrap{
-
-            .content{ width: 100%; background-color: rgba(0,0,0,0.67);padding: 90px 0 100px;}
-            .title{ width: 100%; text-align: center; padding-bottom: 96px;
-                h2{font: 900 40px/1.2 'Roboto'; margin: 0 auto;max-width: 850px; color: #fff; text-transform: uppercase;}
-            }
-            .form-wrap{}
-            .form_row{ display: flex; justify-content: space-around; flex-wrap: wrap;max-width: 1560px;
-                margin: 0 auto;}
-            .form_input{width: 400px; position: relative;}
-            textarea,
-            input{border: none; background-color: transparent; resize: none; border-bottom: 1px solid rgba(255,255,255,0.57);   font: 400 20px/1.26 'Roboto'; color: #fff; padding: 12px 12px 12px 18px; width: 100%; margin-bottom: 102px;
-                &::-webkit-input-placeholder {font: 400 20px/1.2 'Roboto'; color: #fff;}
-                          &:-moz-placeholder {font: 400 20px/1.2 'Roboto'; color: #fff;}
-                         &::-moz-placeholder {font: 400 20px/1.2 'Roboto'; color: #fff;}
-                     &:-ms-input-placeholder {font: 400 20px/1.2 'Roboto'; color: #fff;}
-            }
-            button{font: 400 18px/1.2 'Roboto';  color: #fff; border-radius: 3px;border: 1px solid rgba(255,255,255,0.57); background-color: transparent; display: block;  margin: 0 auto;padding: 30px 78px 27px;
-                &:hover{ background-color: #fff; color: #333;}
-            }
-        }
-
-    }
-}
