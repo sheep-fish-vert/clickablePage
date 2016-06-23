@@ -1,0 +1,213 @@
+@media screen and (max-width: 1560px){
+    header {
+        .mbox { padding: 0 20px; }
+        nav{    width: 715px;
+            a{padding: 0 7px;}
+        }
+        .logo-wrap {  padding: 39px 0 0 14px;}
+    }
+}
+@media screen and (max-width: 1024px){
+    header{
+
+        .sendwich-icon {  display: block;   }
+        nav{background-color: rgba(0, 0, 0, 0.81); padding: 50px 0; display: none;  position: absolute; width: 100%;  top: 0;    right: 0;    left: 0;    z-index: 11;
+            ul{ display: block;}
+            li{margin-bottom: 20px; display: block;}
+            a{font:700 50px/50px 'Roboto'; color:#fff; text-transform: uppercase; display: inline-block;text-decoration: none;
+                &:hover{color:#e54e4e;}
+                &:before,
+                &:after{ display: none;}
+            }
+        }
+    }
+    .footer{
+        nav.col{display: none;}
+        .col{width: 100%;
+            ul{display: flex;justify-content:space-around; }
+            .txt{display: none;}
+        }
+        .footer-wrapp{justify-content: space-around; flex-wrap:wrap;}
+        .foot-copyright{ display: none;}
+    }
+    .iivo-page{
+        .iivo-wrapper{
+            .top-section{
+                .content{ display: block; position: relative;padding: 26px 0 116px; margin-bottom: 32px;}
+                .img{ position: absolute; bottom: 0; left: 0; width: 43%;}
+                .txt{ width: 100%; padding: 0 36px;
+                    .wraper-for-adapt{ display: flex; justify-content: space-between;}
+                    .inner-adapt{ width: 100%;}
+                    .svg{ display: inline-block;
+                        svg{width: 187px;}
+                    }
+                    p{max-width: 535px;display: inline-block; margin-left: 200px;}
+                    h3{ padding-bottom: 60px;}
+                    .button{margin-top: 57px;}
+                }
+
+            }
+            .video{
+                .mbox{ padding: 0;}
+                .row4ik{
+                    &.top-icons { padding: 99px 0 76px;}
+                    &.bottom-icons { padding: 154px 0 128px;}
+
+                }
+                .title{max-width: 930px; padding:75px 0 51px;}
+            }
+            .form-wrap{
+                .mbox{ padding: 0;}
+                .content{padding: 129px 0 22px;}
+                .title{ padding-bottom: 48px;}
+                input{ margin-bottom: 110px;}
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px){
+    .global-wrapper {
+        &:before { display: none; }
+    }
+    header {
+        .sendwich-icon{ right: 44px;}
+        .logo-wrap { padding: 39px 0 0;
+            canvas{ width: 247px;}
+        }
+    }
+    .iivo-page {
+        .iivo-wrapper {
+            &:before,
+            &:after{ display: none;}
+            .top-section {
+                .desctop{ display: none;}
+                .content.mobile{ display: block;}
+            }
+            .video{
+                .content{ background-color: transparent;
+                    .vjs-video-container:before {  padding-top: 56.2%; }
+                }
+                .row4ik {
+                    .item{ display: block; text-align: center; width: 100%;}
+                    .img { display: none; }
+                    .imgm{ display: block; margin: 0 auto; margin-bottom: 36px;}
+                    .txt{ display: block; margin: 0 auto; width: 100%;margin-bottom: 41px;
+                        p{font: 400 30px/1.2 'Roboto';}
+                    }
+                    &.top-icons{ padding: 236px 0 0;    max-width: 1650px;
+                        .item {
+                            &:nth-child(1) {
+                                .txt { max-width: 439px; width: 100%; }
+                            }
+                            &:nth-child(2) {
+                                .txt { max-width: 380px; width: 100%; }
+                            }
+                            &:nth-child(3) {
+                                .txt { max-width: 380px; width: 100%; }
+                            }
+                        }
+
+                    }
+                    &.bottom-icons{ padding:127px 0 237px;
+                        .item{
+                            &:nth-child(1){.txt{ max-width: 492px; width: 100%; }}
+                            &:nth-child(2){.txt{ max-width: 590px; width: 100%; }}
+                            &:nth-child(3){.txt{ max-width: 435px; width: 100%; }}
+
+                        }
+                    }
+                }
+                .title{ border: none;    max-width: 480px;  padding: 53px 0 51px;
+                    h2{ font: 900 48px/1.2 'Roboto';}
+                }
+            }
+            .form-wrap {
+                .form{ padding: 0 20px;}
+                .content {padding: 215px 0 166px; }
+                .title { padding-bottom: 117px;
+                    h2 {font: 900 35px/1.2 'Roboto'; }
+                }
+                textarea,
+                input{font: 400 25px/1.2 'Roboto';padding: 12px 12px 12px 10px; margin-bottom: 125px;
+                    &::-webkit-input-placeholder {font: 400 25px/1.2 'Roboto';}
+                              &:-moz-placeholder {font: 400 25px/1.2 'Roboto';}
+                             &::-moz-placeholder {font: 400 25px/1.2 'Roboto';}
+                         &:-ms-input-placeholder {font: 400 25px/1.2 'Roboto';}
+                }
+                button{ font-size: 25px;padding: 35px 98px 30px; }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 600px){
+    .iivo-page .iivo-wrapper .top-section .content.mobile .txt h1 {
+        padding: 0 0 10px;
+    }
+    .iivo-page .iivo-wrapper .top-section .txt { padding: 0;}
+}
+@media screen and (max-width: 480px){
+
+
+    header {
+        .mbox {            padding: 0 15px;        }
+        .sendwich-icon{ right: 22px; top: 35px;}
+        .logo-wrap { padding: 20px 0 0;
+            canvas{ width: 124px;}
+        }
+        nav a {            font: 700 31px/33px 'Roboto';}
+    }
+    .iivo-page {
+        .iivo-wrapper {
+
+            .top-section {
+
+                .content.mobile{ padding-top: 0;
+                    &:before{ border-width: 478px 828px;  left:-218px; bottom: -204px;}
+                    .txt{
+                        h3{ font-size: 18px;max-width: 257px; padding-bottom: 19px; margin: -29px auto 0;}
+                        h1{ font-size: 24px;    max-width: 231px; padding-bottom: 0;   margin: 0 auto;}
+                        .svg{ padding-bottom: 0;
+                            svg{ width: 94px;}
+                        }
+                        p{ font-size: 15px;}
+                        .button{ font-size: 12px; margin-top: 41px;padding: 19px 46px 16px;}
+                    }
+                }
+            }
+            .video{
+
+                .row4ik {
+                    .item{ }
+                    .img { display: block; margin-bottom: 12px; }
+                    .imgm{ display: none}
+                    .txt{ margin-bottom: 41px;
+                        p{font: 400 15px/1.2 'Roboto';}
+                    }
+                    &.top-icons{ padding: 29px 40px 0;}
+                    &.bottom-icons{ padding: 71px 0 99px;}
+                }
+                .title{ padding: 10px 10px 46px;
+                    h2{ font: 900 24px/1.2 'Roboto';}
+                }
+            }
+            .form-wrap {
+                 .errorText { top: 6px; right: 0;}
+                .form{ padding: 0 60px;}
+                .content {padding: 109px 0 82px; }
+                .title { padding-bottom: 57px;
+                    h2 {font: 900 18px/1.2 'Roboto'; }
+                }
+                textarea,
+                input{font: 400 12px/1.2 'Roboto';padding:6px; margin-bottom: 64px;
+                    &::-webkit-input-placeholder {font: 400 12px/1.2 'Roboto';}
+                    &:-moz-placeholder {font: 400 12px/1.2 'Roboto';}
+                    &::-moz-placeholder {font: 400 12px/1.2 'Roboto';}
+                    &:-ms-input-placeholder {font: 400 12px/1.2 'Roboto';}
+                }
+                button{ font-size: 12px;padding: 17px 49px 16px; }
+            }
+        }
+    }
+
+}

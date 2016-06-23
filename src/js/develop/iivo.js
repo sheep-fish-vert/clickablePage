@@ -1,27 +1,27 @@
 function butter(){
     $('.sendwich-icon').click(function() {
-       $(this).toggleClass('active');
-       if($(this).hasClass('active')){
-            $('.menu').stop().slideDown();
-       }else{
-             $('.menu').stop().slideUp();
-       }
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $('.nav').stop().slideDown();
+        }else{
+            $('.nav').stop().slideUp();
+        }
     });
 }
 /*function changeViewport(){
-    $(window).resize(function(){
-        whatViewport();
-    });
-    function whatViewport(){
-        var windowWidth = screen.width;
-        var viewport = $("meta[name=viewport]");
-        viewport.attr('content', 'width=device-width');
-        if(windowWidth<=640){
-            viewport.attr('content', 'width=640');
-        }
-    };
+ $(window).resize(function(){
+ whatViewport();
+ });
+ function whatViewport(){
+ var windowWidth = screen.width;
+ var viewport = $("meta[name=viewport]");
+ viewport.attr('content', 'width=device-width');
+ if(windowWidth<=640){
+ viewport.attr('content', 'width=640');
+ }
+ };
 
-}*/
+ }*/
 
 var canvas1, stage1, exportRoot1;
 
@@ -38,6 +38,8 @@ function init1() {
 }
 
 
+
+function initVideoJs() {
 
 
     var adsSetupPlugin = function molVastSetup(opts) {
@@ -100,7 +102,8 @@ function init1() {
             });
         });
     }
-
+}
+if($('.video-js').length>0){initVideoJs();}
 $(document).ready(function(){
     butter();
 });
@@ -113,7 +116,9 @@ $(window).load(function(){
 
 $(window).resize(function(){
     if($('.sendwich-icon').css('display') == 'none'){
-        $('.menu').removeAttr('style');
+        $('.nav').removeAttr('style');
         $('.sendwich-icon').removeClass('active');
     }
-});
+});/**
+ * Created by nickolaygotsliyk on 23.06.16.
+ */
