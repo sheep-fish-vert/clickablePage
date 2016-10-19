@@ -153,66 +153,39 @@ header{width: 100%;z-index: 20; position: relative;
             .video{
                 .content{background-color: rgba(255,255,255,0.9);}
                 /*videoJS base----------------------------------------------------------*/
-                    .vjs-video-container{ width: 100%;  position: relative; overflow: hidden;}
-                    .vjs-video-container {
-                        position: relative;
-                        width: 100%;
-                        /* desired width */
-                        overflow: hidden; }
+                .vjs-video-container {
+                    position: relative;
+                    width: 100%;
+                    /* desired width */
+                    overflow: hidden; }
 
-                    .vjs-video-container:before {
-                        content: "";
-                        display: block;
-                        padding-top: 49.2%;
-                        /* initial ratio of 16:9*/ }
+                .vjs-video-container:before {
+                    content: "";
+                    display: block;
+                    padding-top: 56.2%;
+                    /* initial ratio of 16:9*/ }
 
-                    .vjs-poster {
-                        /*centering the poster in the canvas*/
-                        background-position: 50% 50%;
-                        /*ie8*/ }
+                .vjs-poster {
+                    /*centering the poster in the canvas*/
+                    background-position: 50% 50%;
+                    /*ie8*/ }
 
-                    .vjs-video-container > * {
-                        position: absolute !important;
-                        top: 0;
-                        left: 0;
-                        bottom: 0;
-                        right: 0;
-                        width: 100% !important;
-                        height: 100% !important; }
+                .vjs-video-container > * {
+                    position: absolute !important;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100% !important;
+                    height: 100% !important; }
 
-                    .vjs-video-container .vjs-tech {
-                        height: 100%;
-                        /*ie9+*/
-                        top: 0;
-                        bottom: 0;
-                        position: absolute;
-                        margin: auto; }
-                    .video-js{ background-color: transparent;
-                        iframe{ z-index:-1!important;}
-                    }
-                    .video-js:hover .vjs-big-play-button, .video-js .vjs-big-play-button:focus {background-color: transparent;}
-                    .vjs-big-play-centered .vjs-big-play-button {border: none; background: transparent; font-size:21em;
-                        &:before{ color: #fff;}
-                    }
-                    .vjs-has-started .vjs-control-bar{ background-color: transparent;}
-                    .vjs-black-poster{ background-color: transparent;}
-                    .video-js .vjs-volume-level,
-                    .video-js .vjs-play-progress{ background-color: #333;
-                        &:before{ display: none;}
-                    }
-                    .video-js .vjs-progress-holder .vjs-play-progress, .video-js .vjs-progress-holder .vjs-load-progress,
-                    .video-js .vjs-progress-holder .vjs-load-progress div{
-                        height: 9px;
-                    }
-                    .vjs-remaining-time-display,
-                    .vjs-icon-fullscreen-enter:before,
-                    .video-js .vjs-fullscreen-control:before,
-                    .vjs-icon-volume-high:before,
-                    .video-js .vjs-mute-control:before,
-                    .video-js .vjs-volume-menu-button:before,
-                    .vjs-icon-play:before,
-
-                    .video-js .vjs-play-control:before{ color: #333;}
+                .vjs-video-container .vjs-tech {
+                    height: 100%;
+                    /*ie9+*/
+                    top: 0;
+                    bottom: 0;
+                    position: absolute;
+                    margin: auto; }
 
                 /*ENDvideoJS base----------------------------------------------------------*/
                 /*bottom-icons----------------------------------------------------------*/

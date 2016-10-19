@@ -1,0 +1,74 @@
+@media screen and (max-width: 1560px){
+    header {
+        .mbox { padding: 0 20px; }
+        nav{    width: 715px;
+            a{padding: 0 7px;}
+        }
+        .logo-wrap {  padding: 39px 0 0 14px;}
+    }
+}
+@media screen and (max-width: 1024px){
+    header{
+
+        .sendwich-icon {  display: block;   }
+        nav{background-color: rgba(0, 0, 0, 0.81); padding: 50px 0; display: none;  position: absolute; width: 100%;  top: 0;    right: 0;    left: 0;    z-index: 11;
+            ul{ display: block;}
+            li{margin-bottom: 20px; display: block;}
+            a{font:700 50px/50px 'Roboto'; color:#fff; text-transform: uppercase; display: inline-block;text-decoration: none;
+                &:hover{color:#e54e4e;}
+                &:before,
+                &:after{ display: none;}
+            }
+        }
+    }
+    .footer{
+        nav.col{display: none;}
+        .col{width: 100%;
+            ul{display: flex;justify-content:space-around; }
+            .txt{display: none;}
+        }
+        .footer-wrapp{justify-content: space-around; flex-wrap:wrap;}
+        .foot-copyright{ display: none;}
+    }
+
+}
+@media screen and (max-width: 640px){
+
+    header {
+        .sendwich-icon{ right: 44px;}
+        .logo-wrap { padding: 39px 0 0;
+            canvas{ width: 247px;}
+        }
+    }
+
+
+
+}
+@media screen and (max-width: 600px){
+    .more-items{
+        .desctop{ display: none;}
+        .mobile{ display: block;}
+        .all .txt,
+        .txt{ padding-left: 15px; padding-top: 22px; max-width: 268px;}
+        .buttons-block {position: absolute;  bottom: 20px; left: 15px;
+            a { color: #fff; border-color: #fff; margin-right: 0; margin-bottom: 10px;}
+        }
+        .item{    margin-bottom: 15px;}
+
+
+    }
+}
+@media screen and (max-width: 480px){
+
+
+    header {
+        .mbox {            padding: 0 15px;        }
+        .sendwich-icon{ right: 22px; top: 35px;}
+        .logo-wrap { padding: 20px 0 0;
+            canvas{ width: 124px;}
+        }
+        nav a {            font: 700 31px/33px 'Roboto';}
+    }
+
+
+}

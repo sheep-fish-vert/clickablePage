@@ -22,7 +22,15 @@ function butter(){
  };
 
  }*/
-
+function goToSeeMore(){
+    $('.top-section a').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var target = $(href).offset().top;
+        $(scroller).animate({scrollTop:target},500);
+        return false;
+     });
+}
 var canvas1, stage1, exportRoot1;
 
 function init1() {
@@ -106,6 +114,8 @@ function initVideoJs() {
 if($('.video-js').length>0){initVideoJs();}
 $(document).ready(function(){
     butter();
+    goToSeeMore();
+
 });
 
 $(window).load(function(){
@@ -122,3 +132,4 @@ $(window).resize(function(){
 });/**
  * Created by nickolaygotsliyk on 23.06.16.
  */
+
